@@ -1,0 +1,109 @@
+site_name: MLOps Mastery Path
+site_description: A free MLOps course — experiment tracking, model registries, training pipelines, deployment, and monitoring for drift.
+site_url: https://sigilipelli.github.io/mlops-mastery-path/
+repo_url: https://github.com/sigilipelli/mlops-mastery-path
+repo_name: mlops-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Experiment Tracking & Reproducibility":
+      - Overview: level-1/index.md
+      - "01 · What MLOps Actually Solves: Notebook to Production": level-1/01-what-mlops-solves.md
+      - "02 · Experiment Tracking Fundamentals: Runs, Params, Metrics": level-1/02-experiment-tracking-fundamentals.md
+      - "03 · Logging Metrics & Artifacts During Training": level-1/03-logging-metrics-artifacts.md
+      - "04 · Comparing Runs: Finding the Best Model Objectively": level-1/04-comparing-runs.md
+      - "05 · Reproducibility: Seeds, Environments & Data Versions": level-1/05-reproducibility-seeds-environments.md
+      - "06 · Tracking Data Lineage: Which Data Trained Which Model": level-1/06-data-lineage.md
+      - "07 · Hyperparameter Sweeps: Tracking Many Runs at Once": level-1/07-hyperparameter-sweeps.md
+      - "08 · Autologging: What It Captures and What It Misses": level-1/08-autologging.md
+      - "09 · Tagging & Organizing Experiments at Scale": level-1/09-tagging-organizing-experiments.md
+      - "10 · Project — Track a Real Training Run End to End": level-1/10-project-track-training-run.md
+  - "Level 2 · Model Registry & Packaging":
+      - Overview: level-2/index.md
+      - "01 · The Model Registry: Versioning Models Like Code": level-2/01-model-registry-fundamentals.md
+      - "02 · Model Stages: Staging, Production, Archived": level-2/02-model-stages.md
+      - "03 · Packaging a Model: Signatures & Environments": level-2/03-packaging-signatures-environments.md
+      - "04 · Model Lineage: Tracing a Model Back to Its Run": level-2/04-model-lineage.md
+      - "05 · Comparing Model Versions: Is the New One Better?": level-2/05-comparing-model-versions.md
+      - "06 · Model Approval Workflows: Gating Production": level-2/06-model-approval-workflows.md
+      - "07 · Serving a Model Locally: a Real Inference Endpoint": level-2/07-serving-model-locally.md
+      - "08 · Input/Output Schemas: Catching Bad Requests Early": level-2/08-input-output-schemas.md
+      - "09 · Rolling Back a Bad Model Version": level-2/09-rolling-back-model-version.md
+      - "10 · Project — Register, Promote & Serve a Real Model": level-2/10-project-register-promote-serve.md
+  - "Level 3 · Pipelines & Deployment":
+      - Overview: level-3/index.md
+      - "01 · Training Pipelines: Notebook to Reproducible Script": level-3/01-training-pipelines.md
+      - "02 · Pipeline Orchestration: Steps, Dependencies, Artifacts": level-3/02-pipeline-orchestration.md
+      - "03 · CI for ML: Testing a Model Before It Ships": level-3/03-ci-for-ml.md
+      - "04 · CD for ML: Automating Deployment of a New Version": level-3/04-cd-for-ml.md
+      - "05 · Real-Time vs Batch Inference: Two Deployment Shapes": level-3/05-realtime-vs-batch-inference.md
+      - "06 · Containerizing a Model for Deployment": level-3/06-containerizing-a-model.md
+      - "07 · Canary & Shadow Deployment for Models": level-3/07-canary-shadow-deployment.md
+      - "08 · Feature Stores & Training/Serving Skew": level-3/08-feature-stores-training-serving-skew.md
+      - "09 · A/B Testing Models in Production": level-3/09-ab-testing-models.md
+      - "10 · Project — A Real CI/CD Pipeline for a Model": level-3/10-project-ci-cd-pipeline.md
+  - "Level 4 · Monitoring, Drift & Operating ML at Scale":
+      - Overview: level-4/index.md
+      - "01 · Why Monitoring a Model Differs From a Service": level-4/01-monitoring-models-vs-services.md
+      - "02 · Data Drift: When the Input Distribution Changes": level-4/02-data-drift.md
+      - "03 · Concept Drift: When the Relationship Itself Changes": level-4/03-concept-drift.md
+      - "04 · Model Performance Monitoring Without Ground Truth": level-4/04-monitoring-without-ground-truth.md
+      - "05 · Alerting on Model Degradation": level-4/05-alerting-on-degradation.md
+      - "06 · Retraining Triggers: When and How to Retrain": level-4/06-retraining-triggers.md
+      - "07 · Model Governance & Auditability": level-4/07-model-governance-auditability.md
+      - "08 · Cost & Latency Tradeoffs in Model Serving": level-4/08-cost-latency-tradeoffs.md
+      - "09 · Common MLOps Anti-Patterns": level-4/09-mlops-antipatterns.md
+      - "10 · Capstone — A Complete MLOps Loop for a Real Model": level-4/10-capstone-complete-mlops-loop.md
