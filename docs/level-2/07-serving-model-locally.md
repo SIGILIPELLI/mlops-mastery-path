@@ -76,7 +76,7 @@ the packaged model and its signature.
   behaves as expected, not just that it responds to requests at all.
 - Treating a single real latency measurement (14.8ms here) as representative of production load — one request on
   an idle local server measures the server's minimum real overhead, not its real behavior under genuine
-  concurrent traffic, a distinction [Microservices, Level 3](https://sigilipelli.github.io/microservices-mastery-path/level-3/01-circuit-breakers/)
+  concurrent traffic, a distinction [Microservices, Level 3](https://learnmasterypath.com/microservices-mastery-path/level-3/01-circuit-breakers/)
   covers directly for services in general.
 
 ## Exercise
