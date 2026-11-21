@@ -53,9 +53,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/progress-tracker.css
+  - stylesheets/final-quiz.css
 
 extra_javascript:
   - javascripts/progress-tracker.js
+  - javascripts/final-quiz.js
 
 
 
@@ -127,3 +129,5 @@ nav:
       - "08 · Cost & Latency Tradeoffs in Model Serving": level-4/08-cost-latency-tradeoffs.md
       - "09 · Common MLOps Anti-Patterns": level-4/09-mlops-antipatterns.md
       - "10 · Capstone — A Complete MLOps Loop for a Real Model": level-4/10-capstone-complete-mlops-loop.md
+  - "🎯 Final Quiz": quiz.md
+
