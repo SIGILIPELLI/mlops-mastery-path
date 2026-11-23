@@ -83,7 +83,7 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
+  - Interview Questions: interview-questions.md
   - "Level 1 · Experiment Tracking & Reproducibility":
       - Overview: level-1/index.md
       - "01 · What MLOps Actually Solves: Notebook to Production": level-1/01-what-mlops-solves.md
@@ -132,5 +132,5 @@ nav:
       - "08 · Cost & Latency Tradeoffs in Model Serving": level-4/08-cost-latency-tradeoffs.md
       - "09 · Common MLOps Anti-Patterns": level-4/09-mlops-antipatterns.md
       - "10 · Capstone — A Complete MLOps Loop for a Real Model": level-4/10-capstone-complete-mlops-loop.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
