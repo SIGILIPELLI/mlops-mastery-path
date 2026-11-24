@@ -1,0 +1,4220 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="180 MLOps interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the MLOps Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/mlops-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../level-1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>MLOps Interview Questions and Answers (180 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="MLOps Interview Questions and Answers (180 Questions)">
+  <meta property="og:description" content="180 MLOps interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the MLOps Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/mlops-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MLOps Interview Questions and Answers (180 Questions)">
+  <meta name="twitter:description" content="180 MLOps interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the MLOps Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "MLOps Mastery Path", "item": "https://learnmasterypath.com/mlops-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/mlops-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "mlops-mastery-path", "name": "MLOps Mastery Path", "repo": "https://github.com/sigilipelli/mlops-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/mlops-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mlops-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MLOps Mastery Path" class="md-header__button md-logo" aria-label="MLOps Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MLOps Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MLOps Interview Questions and Answers (180 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/mlops-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mlops-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Experiment Tracking & Reproducibility
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Model Registry & Packaging
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Pipelines & Deployment
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Monitoring, Drift & Operating ML at Scale
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MLOps Mastery Path" class="md-nav__button md-logo" aria-label="MLOps Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    MLOps Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/mlops-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mlops-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-experiment-tracking-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Experiment Tracking &amp; Reproducibility
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Experiment Tracking &amp; Reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-mlops-actually-solves-notebook-to-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What MLOps Actually Solves: Notebook to Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-tracking-fundamentals-runs-params-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Tracking Fundamentals: Runs, Params, Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-metrics-artifacts-during-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logging Metrics &amp; Artifacts During Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-runs-finding-the-best-model-objectively" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Runs: Finding the Best Model Objectively
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproducibility-seeds-environments-data-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducibility: Seeds, Environments &amp; Data Versions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-data-lineage-which-data-trained-which-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking Data Lineage: Which Data Trained Which Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperparameter-sweeps-tracking-many-runs-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hyperparameter Sweeps: Tracking Many Runs at Once
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autologging-what-it-captures-and-what-it-misses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autologging: What It Captures and What It Misses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-organizing-experiments-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging &amp; Organizing Experiments at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-track-a-real-training-run-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: Track a Real Training Run End to End
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-model-registry-packaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Model Registry &amp; Packaging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Model Registry &amp; Packaging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-model-registry-versioning-models-like-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Model Registry: Versioning Models Like Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-stages-staging-production-archived" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Stages: Staging, Production, Archived
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packaging-a-model-signatures-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packaging a Model: Signatures &amp; Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-lineage-tracing-a-model-back-to-its-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Lineage: Tracing a Model Back to Its Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-model-versions-is-the-new-one-actually-better" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Model Versions: Is the New One Actually Better?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-approval-workflows-gating-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Approval Workflows: Gating Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serving-a-model-locally-a-real-inference-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serving a Model Locally: a Real Inference Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputoutput-schemas-catching-bad-requests-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input/Output Schemas: Catching Bad Requests Early
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rolling-back-a-bad-model-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rolling Back a Bad Model Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-register-promote-serve-a-real-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: Register, Promote &amp; Serve a Real Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-pipelines-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Pipelines &amp; Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Pipelines &amp; Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#training-pipelines-notebook-to-reproducible-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Pipelines: Notebook to Reproducible Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-orchestration-steps-dependencies-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Orchestration: Steps, Dependencies, Artifacts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-for-ml-testing-a-model-before-it-ships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI for ML: Testing a Model Before It Ships
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cd-for-ml-automating-deployment-of-a-new-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CD for ML: Automating Deployment of a New Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-vs-batch-inference-two-deployment-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-Time vs Batch Inference: Two Deployment Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containerizing-a-model-for-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Containerizing a Model for Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canary-shadow-deployment-for-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canary &amp; Shadow Deployment for Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-stores-trainingserving-skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Stores &amp; Training/Serving Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing-models-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A/B Testing Models in Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-cicd-pipeline-for-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: A Real CI/CD Pipeline for a Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-monitoring-drift-operating-ml-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Monitoring, Drift &amp; Operating ML at Scale
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Monitoring, Drift &amp; Operating ML at Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-monitoring-a-model-differs-from-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Monitoring a Model Differs From a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-drift-when-the-input-distribution-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Drift: When the Input Distribution Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-drift-when-the-relationship-itself-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept Drift: When the Relationship Itself Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-performance-monitoring-without-ground-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Performance Monitoring Without Ground Truth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alerting-on-model-degradation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alerting on Model Degradation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retraining-triggers-when-and-how-to-retrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retraining Triggers: When and How to Retrain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-governance-auditability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Governance &amp; Auditability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-latency-tradeoffs-in-model-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cost &amp; Latency Tradeoffs in Model Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mlops-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common MLOps Anti-Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capstone-a-complete-mlops-loop-for-a-real-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capstone: A Complete MLOps Loop for a Real Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detect-data-drift-with-psi-and-ks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detect data drift with PSI and KS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-registry-with-promotion-gates-and-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A registry with promotion gates and rollback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Experiment Tracking & Reproducibility
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Experiment Tracking & Reproducibility
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-mlops-solves/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What MLOps Actually Solves: Notebook to Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-experiment-tracking-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Experiment Tracking Fundamentals: Runs, Params, Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-logging-metrics-artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Logging Metrics & Artifacts During Training
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-comparing-runs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Comparing Runs: Finding the Best Model Objectively
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-reproducibility-seeds-environments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Reproducibility: Seeds, Environments & Data Versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-data-lineage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Tracking Data Lineage: Which Data Trained Which Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-hyperparameter-sweeps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Hyperparameter Sweeps: Tracking Many Runs at Once
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-autologging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Autologging: What It Captures and What It Misses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-tagging-organizing-experiments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Tagging & Organizing Experiments at Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-track-training-run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Track a Real Training Run End to End
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Model Registry & Packaging
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Model Registry & Packaging
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-model-registry-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · The Model Registry: Versioning Models Like Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-model-stages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Model Stages: Staging, Production, Archived
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-packaging-signatures-environments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Packaging a Model: Signatures & Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-model-lineage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Model Lineage: Tracing a Model Back to Its Run
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-comparing-model-versions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Comparing Model Versions: Is the New One Better?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-model-approval-workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Model Approval Workflows: Gating Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-serving-model-locally/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Serving a Model Locally: a Real Inference Endpoint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-input-output-schemas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Input/Output Schemas: Catching Bad Requests Early
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-rolling-back-model-version/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Rolling Back a Bad Model Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-register-promote-serve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Register, Promote & Serve a Real Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Pipelines & Deployment
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Pipelines & Deployment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-training-pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Training Pipelines: Notebook to Reproducible Script
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-pipeline-orchestration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Pipeline Orchestration: Steps, Dependencies, Artifacts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-ci-for-ml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · CI for ML: Testing a Model Before It Ships
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-cd-for-ml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · CD for ML: Automating Deployment of a New Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-realtime-vs-batch-inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Real-Time vs Batch Inference: Two Deployment Shapes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-containerizing-a-model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Containerizing a Model for Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-canary-shadow-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Canary & Shadow Deployment for Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-feature-stores-training-serving-skew/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Feature Stores & Training/Serving Skew
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-ab-testing-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · A/B Testing Models in Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-ci-cd-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Real CI/CD Pipeline for a Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Monitoring, Drift & Operating ML at Scale
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Monitoring, Drift & Operating ML at Scale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-monitoring-models-vs-services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Why Monitoring a Model Differs From a Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-data-drift/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Data Drift: When the Input Distribution Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-concept-drift/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Concept Drift: When the Relationship Itself Changes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-monitoring-without-ground-truth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Model Performance Monitoring Without Ground Truth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-alerting-on-degradation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Alerting on Model Degradation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-retraining-triggers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Retraining Triggers: When and How to Retrain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-model-governance-auditability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Model Governance & Auditability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-cost-latency-tradeoffs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Cost & Latency Tradeoffs in Model Serving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-mlops-antipatterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Common MLOps Anti-Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-complete-mlops-loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Complete MLOps Loop for a Real Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-experiment-tracking-reproducibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Experiment Tracking &amp; Reproducibility
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Experiment Tracking &amp; Reproducibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-mlops-actually-solves-notebook-to-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What MLOps Actually Solves: Notebook to Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment-tracking-fundamentals-runs-params-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Experiment Tracking Fundamentals: Runs, Params, Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-metrics-artifacts-during-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Logging Metrics &amp; Artifacts During Training
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-runs-finding-the-best-model-objectively" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Runs: Finding the Best Model Objectively
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reproducibility-seeds-environments-data-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reproducibility: Seeds, Environments &amp; Data Versions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tracking-data-lineage-which-data-trained-which-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tracking Data Lineage: Which Data Trained Which Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hyperparameter-sweeps-tracking-many-runs-at-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hyperparameter Sweeps: Tracking Many Runs at Once
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autologging-what-it-captures-and-what-it-misses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autologging: What It Captures and What It Misses
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-organizing-experiments-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging &amp; Organizing Experiments at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-track-a-real-training-run-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: Track a Real Training Run End to End
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-model-registry-packaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Model Registry &amp; Packaging
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Model Registry &amp; Packaging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-model-registry-versioning-models-like-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Model Registry: Versioning Models Like Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-stages-staging-production-archived" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Stages: Staging, Production, Archived
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packaging-a-model-signatures-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packaging a Model: Signatures &amp; Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-lineage-tracing-a-model-back-to-its-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Lineage: Tracing a Model Back to Its Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comparing-model-versions-is-the-new-one-actually-better" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparing Model Versions: Is the New One Actually Better?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-approval-workflows-gating-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Approval Workflows: Gating Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serving-a-model-locally-a-real-inference-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serving a Model Locally: a Real Inference Endpoint
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputoutput-schemas-catching-bad-requests-early" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input/Output Schemas: Catching Bad Requests Early
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rolling-back-a-bad-model-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rolling Back a Bad Model Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-register-promote-serve-a-real-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: Register, Promote &amp; Serve a Real Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-pipelines-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Pipelines &amp; Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Pipelines &amp; Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#training-pipelines-notebook-to-reproducible-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training Pipelines: Notebook to Reproducible Script
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-orchestration-steps-dependencies-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline Orchestration: Steps, Dependencies, Artifacts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-for-ml-testing-a-model-before-it-ships" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI for ML: Testing a Model Before It Ships
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cd-for-ml-automating-deployment-of-a-new-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CD for ML: Automating Deployment of a New Version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-time-vs-batch-inference-two-deployment-shapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real-Time vs Batch Inference: Two Deployment Shapes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#containerizing-a-model-for-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Containerizing a Model for Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canary-shadow-deployment-for-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Canary &amp; Shadow Deployment for Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#feature-stores-trainingserving-skew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Stores &amp; Training/Serving Skew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ab-testing-models-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A/B Testing Models in Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-a-real-cicd-pipeline-for-a-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project: A Real CI/CD Pipeline for a Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-monitoring-drift-operating-ml-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Monitoring, Drift &amp; Operating ML at Scale
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Monitoring, Drift &amp; Operating ML at Scale">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-monitoring-a-model-differs-from-a-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why Monitoring a Model Differs From a Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-drift-when-the-input-distribution-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Drift: When the Input Distribution Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concept-drift-when-the-relationship-itself-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concept Drift: When the Relationship Itself Changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-performance-monitoring-without-ground-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Performance Monitoring Without Ground Truth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alerting-on-model-degradation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alerting on Model Degradation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retraining-triggers-when-and-how-to-retrain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retraining Triggers: When and How to Retrain
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-governance-auditability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Model Governance &amp; Auditability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cost-latency-tradeoffs-in-model-serving" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cost &amp; Latency Tradeoffs in Model Serving
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-mlops-anti-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common MLOps Anti-Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capstone-a-complete-mlops-loop-for-a-real-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Capstone: A Complete MLOps Loop for a Real Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#detect-data-drift-with-psi-and-ks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detect data drift with PSI and KS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-registry-with-promotion-gates-and-rollback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A registry with promotion gates and rollback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="mlops-interview-questions-and-answers">MLOps Interview Questions and Answers<a class="headerlink" href="#mlops-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>180 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free MLOps Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-experiment-tracking-reproducibility">Level 1 · Experiment Tracking &amp; Reproducibility<a class="headerlink" href="#level-1-experiment-tracking-reproducibility" title="Permanent link">&para;</a></h2>
+<h3 id="what-mlops-actually-solves-notebook-to-production"><a href="../level-1/01-what-mlops-solves/">What MLOps Actually Solves: Notebook to Production</a><a class="headerlink" href="#what-mlops-actually-solves-notebook-to-production" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What problem does MLOps solve?</p>
+<p><strong>Answer:</strong> Reliably taking models from experiments to production and keeping them healthy</p>
+<p>Operational discipline for ML.</p>
+<p><strong>Q2.</strong> Why do ML projects fail to reach production?</p>
+<p><strong>Answer:</strong> Irreproducible experiments, unmanaged data/models and no deployment or monitoring path</p>
+<p>Hidden technical debt.</p>
+<p><strong>Q3.</strong> How does ML differ from traditional software to operate?</p>
+<p><strong>Answer:</strong> Behavior depends on data and degrades as data changes, not just on code</p>
+<p>Data is part of the system.</p>
+<p><strong>Q4.</strong> What are the lifecycle stages?</p>
+<p><strong>Answer:</strong> Data, experiment, train, validate, deploy, monitor and retrain</p>
+<p>A loop.</p>
+<h3 id="experiment-tracking-fundamentals-runs-params-metrics"><a href="../level-1/02-experiment-tracking-fundamentals/">Experiment Tracking Fundamentals: Runs, Params, Metrics</a><a class="headerlink" href="#experiment-tracking-fundamentals-runs-params-metrics" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> What does experiment tracking record?</p>
+<p><strong>Answer:</strong> Parameters, metrics, artifacts, code version and data version per run</p>
+<p>So results are reproducible.</p>
+<p><strong>Q6.</strong> What's an MLflow run?</p>
+<p><strong>Answer:</strong> One execution of training code with its logged information</p>
+<p>Grouped into experiments.</p>
+<p><strong>Q7.</strong> Why track runs rather than keeping notebooks?</p>
+<p><strong>Answer:</strong> Comparisons and reproducibility need structured records</p>
+<p>Notebook state is lost.</p>
+<p><strong>Q8.</strong> What should always be logged?</p>
+<p><strong>Answer:</strong> Hyperparameters and evaluation metrics</p>
+<p>Core run data.</p>
+<h3 id="logging-metrics-artifacts-during-training"><a href="../level-1/03-logging-metrics-artifacts/">Logging Metrics &amp; Artifacts During Training</a><a class="headerlink" href="#logging-metrics-artifacts-during-training" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What are artifacts?</p>
+<p><strong>Answer:</strong> Files produced by a run such as models, plots and reports</p>
+<p>log_artifact.</p>
+<p><strong>Q10.</strong> What's the difference between a param and a metric?</p>
+<p><strong>Answer:</strong> Params are inputs (fixed); metrics are outputs (can be logged over time)</p>
+<p>Step-wise metrics.</p>
+<p><strong>Q11.</strong> Why log metrics per epoch?</p>
+<p><strong>Answer:</strong> To see convergence and overfitting</p>
+<p>Curves.</p>
+<p><strong>Q12.</strong> Where store large artifacts?</p>
+<p><strong>Answer:</strong> Object storage referenced by the tracking server</p>
+<p>Artifact store.</p>
+<h3 id="comparing-runs-finding-the-best-model-objectively"><a href="../level-1/04-comparing-runs/">Comparing Runs: Finding the Best Model Objectively</a><a class="headerlink" href="#comparing-runs-finding-the-best-model-objectively" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> How compare runs fairly?</p>
+<p><strong>Answer:</strong> Same data split, metrics and conditions, focusing on the target metric</p>
+<p>Controlled.</p>
+<p><strong>Q14.</strong> What does a parallel coordinates plot show?</p>
+<p><strong>Answer:</strong> Relationships between hyperparameters and metrics across runs</p>
+<p>Sweeps.</p>
+<p><strong>Q15.</strong> Why not pick the best run by test score repeatedly?</p>
+<p><strong>Answer:</strong> You overfit the test set; keep a final holdout</p>
+<p>Selection bias.</p>
+<p><strong>Q16.</strong> What helps compare noisy runs?</p>
+<p><strong>Answer:</strong> Repeated runs with different seeds</p>
+<p>Variance.</p>
+<h3 id="reproducibility-seeds-environments-data-versions"><a href="../level-1/05-reproducibility-seeds-environments/">Reproducibility: Seeds, Environments &amp; Data Versions</a><a class="headerlink" href="#reproducibility-seeds-environments-data-versions" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> Two runs with the same seed produce what with the same code and data?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span><span class="n">b</span><span class="o">=</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> True</p>
+<p>Seeds make randomness repeatable. Verified by running it.</p>
+<p><strong>Q18.</strong> What else besides seeds affects reproducibility?</p>
+<p><strong>Answer:</strong> Library versions, hardware/nondeterminism, data versions and configuration</p>
+<p>Pin environments.</p>
+<p><strong>Q19.</strong> How capture the environment?</p>
+<p><strong>Answer:</strong> requirements/conda lock files or container images logged with the run</p>
+<p>Same environment.</p>
+<p><strong>Q20.</strong> Why log the git commit?</p>
+<p><strong>Answer:</strong> To rebuild the exact code used</p>
+<p>Provenance.</p>
+<h3 id="tracking-data-lineage-which-data-trained-which-model"><a href="../level-1/06-data-lineage/">Tracking Data Lineage: Which Data Trained Which Model</a><a class="headerlink" href="#tracking-data-lineage-which-data-trained-which-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What is data lineage?</p>
+<p><strong>Answer:</strong> Tracking where data came from and how it was transformed into a model's inputs</p>
+<p>Auditability.</p>
+<p><strong>Q22.</strong> Why version datasets?</p>
+<p><strong>Answer:</strong> To reproduce training and explain model behavior</p>
+<p>DVC/lakeFS/hashes.</p>
+<p><strong>Q23.</strong> What's a cheap lineage start?</p>
+<p><strong>Answer:</strong> Log dataset path/hash and row counts with every run</p>
+<p>Minimum.</p>
+<p><strong>Q24.</strong> What does lineage help during incidents?</p>
+<p><strong>Answer:</strong> Finding which data and code produced a bad model</p>
+<p>Root cause.</p>
+<h3 id="hyperparameter-sweeps-tracking-many-runs-at-once"><a href="../level-1/07-hyperparameter-sweeps/">Hyperparameter Sweeps: Tracking Many Runs at Once</a><a class="headerlink" href="#hyperparameter-sweeps-tracking-many-runs-at-once" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What is a hyperparameter sweep?</p>
+<p><strong>Answer:</strong> Running training across parameter combinations to find good settings</p>
+<p>Grid/random/Bayesian.</p>
+<p><strong>Q26.</strong> Why prefer random over grid search?</p>
+<p><strong>Answer:</strong> It explores more distinct values per important parameter</p>
+<p>Bergstra &amp; Bengio.</p>
+<p><strong>Q27.</strong> What must a sweep respect?</p>
+<p><strong>Answer:</strong> A separate validation set and a compute budget</p>
+<p>Avoid leakage.</p>
+<p><strong>Q28.</strong> How organize sweep runs?</p>
+<p><strong>Answer:</strong> Nested/parent-child runs with tags</p>
+<p>Comparison.</p>
+<h3 id="autologging-what-it-captures-and-what-it-misses"><a href="../level-1/08-autologging/">Autologging: What It Captures and What It Misses</a><a class="headerlink" href="#autologging-what-it-captures-and-what-it-misses" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> What does autologging do?</p>
+<p><strong>Answer:</strong> Automatically records params, metrics and models for supported libraries</p>
+<p>mlflow.autolog().</p>
+<p><strong>Q30.</strong> What's a risk of relying only on autolog?</p>
+<p><strong>Answer:</strong> Missing custom metrics, data versions or business context</p>
+<p>Add explicit logs.</p>
+<p><strong>Q31.</strong> When enable it?</p>
+<p><strong>Answer:</strong> At the start of the script before training</p>
+<p>Hooks into libraries.</p>
+<p><strong>Q32.</strong> What do you still log manually?</p>
+<p><strong>Answer:</strong> Dataset version, tags and domain-specific metrics</p>
+<p>Context.</p>
+<h3 id="tagging-organizing-experiments-at-scale"><a href="../level-1/09-tagging-organizing-experiments/">Tagging &amp; Organizing Experiments at Scale</a><a class="headerlink" href="#tagging-organizing-experiments-at-scale" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> Why tag runs?</p>
+<p><strong>Answer:</strong> Filtering and grouping by team, dataset, purpose or status</p>
+<p>Organization.</p>
+<p><strong>Q34.</strong> What naming convention helps experiments?</p>
+<p><strong>Answer:</strong> Consistent names by project/problem and tags for variants</p>
+<p>Findability.</p>
+<p><strong>Q35.</strong> What's an experiment vs a run?</p>
+<p><strong>Answer:</strong> An experiment groups related runs</p>
+<p>Hierarchy.</p>
+<p><strong>Q36.</strong> What's a good tag?</p>
+<p><strong>Answer:</strong> owner, dataset_version, objective and git_sha</p>
+<p>Queryable.</p>
+<h3 id="project-track-a-real-training-run-end-to-end"><a href="../level-1/10-project-track-training-run/">Project: Track a Real Training Run End to End</a><a class="headerlink" href="#project-track-a-real-training-run-end-to-end" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What does the tracking project combine?</p>
+<p><strong>Answer:</strong> Seeds, environment capture, params/metrics/artifacts and tags in one training run</p>
+<p>Level 1 project.</p>
+<p><strong>Q38.</strong> How prove reproducibility?</p>
+<p><strong>Answer:</strong> Re-run from the logged information and compare metrics</p>
+<p>Verify.</p>
+<p><strong>Q39.</strong> What's the deliverable?</p>
+<p><strong>Answer:</strong> A run someone else can reproduce and explain</p>
+<p>Provenance.</p>
+<p><strong>Q40.</strong> What should the run link to?</p>
+<p><strong>Answer:</strong> Code commit, data version and environment</p>
+<p>Lineage.</p>
+<h2 id="level-2-model-registry-packaging">Level 2 · Model Registry &amp; Packaging<a class="headerlink" href="#level-2-model-registry-packaging" title="Permanent link">&para;</a></h2>
+<h3 id="the-model-registry-versioning-models-like-code"><a href="../level-2/01-model-registry-fundamentals/">The Model Registry: Versioning Models Like Code</a><a class="headerlink" href="#the-model-registry-versioning-models-like-code" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> What is a model registry?</p>
+<p><strong>Answer:</strong> A central store of versioned models with metadata and lifecycle management</p>
+<p>Governed models.</p>
+<p><strong>Q42.</strong> What does registering link?</p>
+<p><strong>Answer:</strong> A model version to the run/code/data that produced it</p>
+<p>Lineage.</p>
+<p><strong>Q43.</strong> Why not pass pickles around by email?</p>
+<p><strong>Answer:</strong> No versioning, provenance or controlled promotion</p>
+<p>Registry.</p>
+<p><strong>Q44.</strong> What's a registered model version?</p>
+<p><strong>Answer:</strong> An immutable numbered snapshot of a model</p>
+<p>v1, v2.</p>
+<h3 id="model-stages-staging-production-archived"><a href="../level-2/02-model-stages/">Model Stages: Staging, Production, Archived</a><a class="headerlink" href="#model-stages-staging-production-archived" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> What do stages/aliases represent?</p>
+<p><strong>Answer:</strong> Lifecycle states such as staging and production</p>
+<p>Promotion.</p>
+<p><strong>Q46.</strong> Why use aliases (champion) over stage names in newer MLflow?</p>
+<p><strong>Answer:</strong> Flexible, explicit pointers decoupled from fixed stages</p>
+<p>Deployments reference aliases.</p>
+<p><strong>Q47.</strong> What should consumers reference?</p>
+<p><strong>Answer:</strong> An alias/stage, not a hard-coded version number</p>
+<p>Easy rollback.</p>
+<p><strong>Q48.</strong> What happens on promotion?</p>
+<p><strong>Answer:</strong> The pointer moves to a new validated version</p>
+<p>Controlled.</p>
+<h3 id="packaging-a-model-signatures-environments"><a href="../level-2/03-packaging-signatures-environments/">Packaging a Model: Signatures &amp; Environments</a><a class="headerlink" href="#packaging-a-model-signatures-environments" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> What is a model signature?</p>
+<p><strong>Answer:</strong> The expected input and output schema of a model</p>
+<p>Validation.</p>
+<p><strong>Q50.</strong> Why capture the environment with the model?</p>
+<p><strong>Answer:</strong> Serving must recreate dependencies to behave the same</p>
+<p>conda.yaml.</p>
+<p><strong>Q51.</strong> What's a model flavor?</p>
+<p><strong>Answer:</strong> A standard packaging format for a framework (sklearn, pyfunc)</p>
+<p>Portability.</p>
+<p><strong>Q52.</strong> What does pyfunc provide?</p>
+<p><strong>Answer:</strong> A generic Python function interface to any logged model</p>
+<p>Uniform predict().</p>
+<h3 id="model-lineage-tracing-a-model-back-to-its-run"><a href="../level-2/04-model-lineage/">Model Lineage: Tracing a Model Back to Its Run</a><a class="headerlink" href="#model-lineage-tracing-a-model-back-to-its-run" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What does model lineage show?</p>
+<p><strong>Answer:</strong> The run, data, code and parameters behind a registered version</p>
+<p>Traceability.</p>
+<p><strong>Q54.</strong> Why needed for audits?</p>
+<p><strong>Answer:</strong> To explain how a production model was built</p>
+<p>Governance.</p>
+<p><strong>Q55.</strong> What does linking register-time tags add?</p>
+<p><strong>Answer:</strong> Evaluation reports and approvals</p>
+<p>Evidence.</p>
+<p><strong>Q56.</strong> What happens if lineage is missing?</p>
+<p><strong>Answer:</strong> You can't reproduce or explain a production model</p>
+<p>Risk.</p>
+<h3 id="comparing-model-versions-is-the-new-one-actually-better"><a href="../level-2/05-comparing-model-versions/">Comparing Model Versions: Is the New One Actually Better?</a><a class="headerlink" href="#comparing-model-versions-is-the-new-one-actually-better" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> How compare two model versions properly?</p>
+<p><strong>Answer:</strong> Same evaluation data and metrics, including slices and latency</p>
+<p>Fair.</p>
+<p><strong>Q58.</strong> What do slice metrics reveal?</p>
+<p><strong>Answer:</strong> Performance on subgroups hidden by averages</p>
+<p>Fairness and robustness.</p>
+<p><strong>Q59.</strong> What non-accuracy criteria matter?</p>
+<p><strong>Answer:</strong> Latency, memory, cost and stability</p>
+<p>Production fit.</p>
+<p><strong>Q60.</strong> What's a regression test for models?</p>
+<p><strong>Answer:</strong> A fixed set of cases the new model must still pass</p>
+<p>Golden set.</p>
+<h3 id="model-approval-workflows-gating-production"><a href="../level-2/06-model-approval-workflows/">Model Approval Workflows: Gating Production</a><a class="headerlink" href="#model-approval-workflows-gating-production" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What does an approval workflow add?</p>
+<p><strong>Answer:</strong> Human/automated gates before promoting to production</p>
+<p>Controls.</p>
+<p><strong>Q62.</strong> What can automated gates check?</p>
+<p><strong>Answer:</strong> Metric thresholds, schema compatibility and tests</p>
+<p>Policy as code.</p>
+<p><strong>Q63.</strong> Why require reviewer sign-off?</p>
+<p><strong>Answer:</strong> Accountability for models affecting users</p>
+<p>Governance.</p>
+<p><strong>Q64.</strong> What should be recorded?</p>
+<p><strong>Answer:</strong> Who approved, when and based on what evidence</p>
+<p>Audit.</p>
+<h3 id="serving-a-model-locally-a-real-inference-endpoint"><a href="../level-2/07-serving-model-locally/">Serving a Model Locally: a Real Inference Endpoint</a><a class="headerlink" href="#serving-a-model-locally-a-real-inference-endpoint" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> What does serving a model locally let you do?</p>
+<p><strong>Answer:</strong> Test the packaged model behind an HTTP API before deployment</p>
+<p>mlflow models serve.</p>
+<p><strong>Q66.</strong> What endpoint style is common?</p>
+<p><strong>Answer:</strong> POST /invocations with JSON/CSV input</p>
+<p>Standard.</p>
+<p><strong>Q67.</strong> Why test serving early?</p>
+<p><strong>Answer:</strong> Packaging and dependency problems appear before production</p>
+<p>Shift left.</p>
+<p><strong>Q68.</strong> What should you check locally?</p>
+<p><strong>Answer:</strong> Schema validation, latency and error responses</p>
+<p>Behavior.</p>
+<h3 id="inputoutput-schemas-catching-bad-requests-early"><a href="../level-2/08-input-output-schemas/">Input/Output Schemas: Catching Bad Requests Early</a><a class="headerlink" href="#inputoutput-schemas-catching-bad-requests-early" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> Why validate input schemas at serving time?</p>
+<p><strong>Answer:</strong> Reject malformed requests instead of returning wrong predictions</p>
+<p>Fail clearly.</p>
+<p><strong>Q70.</strong> What's the risk of silent type coercion?</p>
+<p><strong>Answer:</strong> Wrong predictions with no error</p>
+<p>Strict schemas.</p>
+<p><strong>Q71.</strong> What should errors return?</p>
+<p><strong>Answer:</strong> Clear 4xx messages for invalid input</p>
+<p>Client errors.</p>
+<p><strong>Q72.</strong> What happens when features are missing?</p>
+<p><strong>Answer:</strong> Reject or handle explicitly per policy, not guess</p>
+<p>Defined behavior.</p>
+<h3 id="rolling-back-a-bad-model-version"><a href="../level-2/09-rolling-back-model-version/">Rolling Back a Bad Model Version</a><a class="headerlink" href="#rolling-back-a-bad-model-version" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> How roll back a bad model?</p>
+<p><strong>Answer:</strong> Point the production alias back to the previous version</p>
+<p>Fast.</p>
+<p><strong>Q74.</strong> What makes rollback fast?</p>
+<p><strong>Answer:</strong> Versioned immutable models and alias-based deployments</p>
+<p>Prepared.</p>
+<p><strong>Q75.</strong> What should trigger rollback?</p>
+<p><strong>Answer:</strong> Monitored degradation or failed health checks</p>
+<p>Automation.</p>
+<p><strong>Q76.</strong> What do you do after rollback?</p>
+<p><strong>Answer:</strong> Investigate root cause before retrying promotion</p>
+<p>Postmortem.</p>
+<h3 id="project-register-promote-serve-a-real-model"><a href="../level-2/10-project-register-promote-serve/">Project: Register, Promote &amp; Serve a Real Model</a><a class="headerlink" href="#project-register-promote-serve-a-real-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What does the register/promote/serve project combine?</p>
+<p><strong>Answer:</strong> Registering a model, gating promotion and serving it by alias</p>
+<p>Level 2 project.</p>
+<p><strong>Q78.</strong> What proves the gate works?</p>
+<p><strong>Answer:</strong> A worse model fails promotion and a better one passes</p>
+<p>Test the policy.</p>
+<p><strong>Q79.</strong> How verify serving?</p>
+<p><strong>Answer:</strong> Call the endpoint with valid and invalid payloads</p>
+<p>Contract.</p>
+<p><strong>Q80.</strong> What's the key artifact?</p>
+<p><strong>Answer:</strong> A versioned, documented model in the registry</p>
+<p>Handover.</p>
+<h2 id="level-3-pipelines-deployment">Level 3 · Pipelines &amp; Deployment<a class="headerlink" href="#level-3-pipelines-deployment" title="Permanent link">&para;</a></h2>
+<h3 id="training-pipelines-notebook-to-reproducible-script"><a href="../level-3/01-training-pipelines/">Training Pipelines: Notebook to Reproducible Script</a><a class="headerlink" href="#training-pipelines-notebook-to-reproducible-script" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> What is a training pipeline?</p>
+<p><strong>Answer:</strong> Automated, repeatable steps from data to a validated model</p>
+<p>Orchestrated.</p>
+<p><strong>Q82.</strong> Why parameterize pipelines?</p>
+<p><strong>Answer:</strong> Reuse across datasets, dates and configs</p>
+<p>Retraining.</p>
+<p><strong>Q83.</strong> What steps are typical?</p>
+<p><strong>Answer:</strong> Ingest, validate, featurize, train, evaluate, register</p>
+<p>DAG.</p>
+<p><strong>Q84.</strong> Why data validation up front?</p>
+<p><strong>Answer:</strong> Bad data silently produces bad models</p>
+<p>Gate early.</p>
+<h3 id="pipeline-orchestration-steps-dependencies-artifacts"><a href="../level-3/02-pipeline-orchestration/">Pipeline Orchestration: Steps, Dependencies, Artifacts</a><a class="headerlink" href="#pipeline-orchestration-steps-dependencies-artifacts" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What does an orchestrator provide?</p>
+<p><strong>Answer:</strong> Scheduling, dependencies, retries and visibility for pipeline steps</p>
+<p>Airflow/Kubeflow/Dagster.</p>
+<p><strong>Q86.</strong> Why idempotent steps?</p>
+<p><strong>Answer:</strong> Retries and backfills must be safe</p>
+<p>Deterministic outputs.</p>
+<p><strong>Q87.</strong> What should steps pass between each other?</p>
+<p><strong>Answer:</strong> Versioned artifacts, not local files</p>
+<p>Reproducible.</p>
+<p><strong>Q88.</strong> How trigger retraining?</p>
+<p><strong>Answer:</strong> Schedule, new data arrival or monitoring signals</p>
+<p>Automation.</p>
+<h3 id="ci-for-ml-testing-a-model-before-it-ships"><a href="../level-3/03-ci-for-ml/">CI for ML: Testing a Model Before It Ships</a><a class="headerlink" href="#ci-for-ml-testing-a-model-before-it-ships" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What does CI for ML test?</p>
+<p><strong>Answer:</strong> Code, data validation, training smoke tests and model checks</p>
+<p>Beyond unit tests.</p>
+<p><strong>Q90.</strong> What's a training smoke test?</p>
+<p><strong>Answer:</strong> A tiny-data run proving the pipeline works end to end</p>
+<p>Fast.</p>
+<p><strong>Q91.</strong> What data tests help?</p>
+<p><strong>Answer:</strong> Schema, ranges, null rates and distribution checks</p>
+<p>Great Expectations.</p>
+<p><strong>Q92.</strong> What should fail a PR?</p>
+<p><strong>Answer:</strong> Broken tests or a metric regression below the gate</p>
+<p>Quality.</p>
+<h3 id="cd-for-ml-automating-deployment-of-a-new-version"><a href="../level-3/04-cd-for-ml/">CD for ML: Automating Deployment of a New Version</a><a class="headerlink" href="#cd-for-ml-automating-deployment-of-a-new-version" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> What does CD for ML deploy?</p>
+<p><strong>Answer:</strong> Validated models and serving code through staged environments</p>
+<p>Automated.</p>
+<p><strong>Q94.</strong> What gates promotion?</p>
+<p><strong>Answer:</strong> Evaluation thresholds, tests and approvals</p>
+<p>Policy.</p>
+<p><strong>Q95.</strong> How separate model and code releases?</p>
+<p><strong>Answer:</strong> Version the model independently from the service code</p>
+<p>Faster updates.</p>
+<p><strong>Q96.</strong> What enables safe rollout?</p>
+<p><strong>Answer:</strong> Staged deploys with monitoring and rollback</p>
+<p>Risk control.</p>
+<h3 id="real-time-vs-batch-inference-two-deployment-shapes"><a href="../level-3/05-realtime-vs-batch-inference/">Real-Time vs Batch Inference: Two Deployment Shapes</a><a class="headerlink" href="#real-time-vs-batch-inference-two-deployment-shapes" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> When choose batch inference?</p>
+<p><strong>Answer:</strong> When predictions can be computed ahead (reports, recommendations)</p>
+<p>Cheaper.</p>
+<p><strong>Q98.</strong> When choose real-time?</p>
+<p><strong>Answer:</strong> When a decision needs a fresh prediction per request</p>
+<p>Latency budget.</p>
+<p><strong>Q99.</strong> What does online inference require?</p>
+<p><strong>Answer:</strong> Low latency, scaling and the same features as training</p>
+<p>Consistency.</p>
+<p><strong>Q100.</strong> What hybrid exists?</p>
+<p><strong>Answer:</strong> Precompute common predictions and compute the rest online</p>
+<p>Trade-off.</p>
+<h3 id="containerizing-a-model-for-deployment"><a href="../level-3/06-containerizing-a-model/">Containerizing a Model for Deployment</a><a class="headerlink" href="#containerizing-a-model-for-deployment" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> Why containerize a model?</p>
+<p><strong>Answer:</strong> Reproducible environment and portable deployment</p>
+<p>Docker.</p>
+<p><strong>Q102.</strong> What belongs in the image?</p>
+<p><strong>Answer:</strong> Model artifact, pinned dependencies and the serving code</p>
+<p>Minimal.</p>
+<p><strong>Q103.</strong> How keep images small?</p>
+<p><strong>Answer:</strong> Multi-stage builds and slim bases</p>
+<p>Faster pulls.</p>
+<p><strong>Q104.</strong> What health endpoint should exist?</p>
+<p><strong>Answer:</strong> Readiness/liveness checks (model loaded)</p>
+<p>Orchestration.</p>
+<h3 id="canary-shadow-deployment-for-models"><a href="../level-3/07-canary-shadow-deployment/">Canary &amp; Shadow Deployment for Models</a><a class="headerlink" href="#canary-shadow-deployment-for-models" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What is shadow deployment?</p>
+<p><strong>Answer:</strong> The new model receives live traffic but its outputs aren't used</p>
+<p>Safe comparison.</p>
+<p><strong>Q106.</strong> What is a canary?</p>
+<p><strong>Answer:</strong> Serving a small share of real traffic with the new model</p>
+<p>Gradual.</p>
+<p><strong>Q107.</strong> What do you compare in shadow mode?</p>
+<p><strong>Answer:</strong> New vs current predictions and latency without user impact</p>
+<p>Offline-like.</p>
+<p><strong>Q108.</strong> When promote a canary?</p>
+<p><strong>Answer:</strong> When metrics are acceptable against the baseline</p>
+<p>Automated checks.</p>
+<h3 id="feature-stores-trainingserving-skew"><a href="../level-3/08-feature-stores-training-serving-skew/">Feature Stores &amp; Training/Serving Skew</a><a class="headerlink" href="#feature-stores-trainingserving-skew" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What is training-serving skew?</p>
+<p><strong>Answer:</strong> Features computed differently in training and production</p>
+<p>Silent errors.</p>
+<p><strong>Q110.</strong> What does a feature store provide?</p>
+<p><strong>Answer:</strong> Consistent, reusable features for offline and online use</p>
+<p>One definition.</p>
+<p><strong>Q111.</strong> What prevents skew without a store?</p>
+<p><strong>Answer:</strong> Sharing the same transformation code in both paths</p>
+<p>Single source.</p>
+<p><strong>Q112.</strong> What's point-in-time correctness?</p>
+<p><strong>Answer:</strong> Using only data available at prediction time when building training sets</p>
+<p>Avoid leakage.</p>
+<h3 id="ab-testing-models-in-production"><a href="../level-3/09-ab-testing-models/">A/B Testing Models in Production</a><a class="headerlink" href="#ab-testing-models-in-production" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> Why A/B test models?</p>
+<p><strong>Answer:</strong> Offline metrics don't always predict business impact</p>
+<p>Online evaluation.</p>
+<p><strong>Q114.</strong> What must be defined before the test?</p>
+<p><strong>Answer:</strong> The primary metric, sample size and duration</p>
+<p>Avoid peeking.</p>
+<p><strong>Q115.</strong> What randomization unit is typical?</p>
+<p><strong>Answer:</strong> User (not request) to avoid inconsistent experience</p>
+<p>Sticky assignment.</p>
+<p><strong>Q116.</strong> What guardrail metrics protect?</p>
+<p><strong>Answer:</strong> Latency, errors and key business outcomes</p>
+<p>Do no harm.</p>
+<h3 id="project-a-real-cicd-pipeline-for-a-model"><a href="../level-3/10-project-ci-cd-pipeline/">Project: A Real CI/CD Pipeline for a Model</a><a class="headerlink" href="#project-a-real-cicd-pipeline-for-a-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What does the CI/CD pipeline project combine?</p>
+<p><strong>Answer:</strong> Tests, training, evaluation gates, containerization and staged deployment</p>
+<p>Level 3 project.</p>
+<p><strong>Q118.</strong> How prove the gate works?</p>
+<p><strong>Answer:</strong> A degraded model is blocked automatically</p>
+<p>Negative test.</p>
+<p><strong>Q119.</strong> What's the pipeline's output?</p>
+<p><strong>Answer:</strong> A tested, versioned, deployable model service</p>
+<p>Release.</p>
+<p><strong>Q120.</strong> What do you log for traceability?</p>
+<p><strong>Answer:</strong> Commit, data version, metrics and image digest</p>
+<p>Provenance.</p>
+<h2 id="level-4-monitoring-drift-operating-ml-at-scale">Level 4 · Monitoring, Drift &amp; Operating ML at Scale<a class="headerlink" href="#level-4-monitoring-drift-operating-ml-at-scale" title="Permanent link">&para;</a></h2>
+<h3 id="why-monitoring-a-model-differs-from-a-service"><a href="../level-4/01-monitoring-models-vs-services/">Why Monitoring a Model Differs From a Service</a><a class="headerlink" href="#why-monitoring-a-model-differs-from-a-service" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> How is monitoring a model different from monitoring a service?</p>
+<p><strong>Answer:</strong> You must watch data and prediction quality, not just latency and errors</p>
+<p>ML-specific signals.</p>
+<p><strong>Q122.</strong> What service metrics still matter?</p>
+<p><strong>Answer:</strong> Latency, throughput, errors and resource use</p>
+<p>Foundation.</p>
+<p><strong>Q123.</strong> What's silent failure?</p>
+<p><strong>Answer:</strong> The service is healthy but predictions are wrong</p>
+<p>Needs ML monitoring.</p>
+<p><strong>Q124.</strong> Where log predictions?</p>
+<p><strong>Answer:</strong> With inputs, model version and timestamps for later analysis</p>
+<p>Enables drift and labeling.</p>
+<h3 id="data-drift-when-the-input-distribution-changes"><a href="../level-4/02-data-drift/">Data Drift: When the Input Distribution Changes</a><a class="headerlink" href="#data-drift-when-the-input-distribution-changes" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> What is data drift?</p>
+<p><strong>Answer:</strong> The distribution of input features changes from training</p>
+<p>Covariate shift.</p>
+<p><strong>Q126.</strong> What statistic compares distributions?</p>
+<p><strong>Answer:</strong> PSI, KS test or Jensen-Shannon distance</p>
+<p>Thresholds.</p>
+<p><strong>Q127.</strong> Does drift always mean worse performance?</p>
+<p><strong>Answer:</strong> No, but it's a warning to investigate</p>
+<p>Check impact.</p>
+<p><strong>Q128.</strong> What reference should drift compare against?</p>
+<p><strong>Answer:</strong> The training (or recent healthy) data</p>
+<p>Baseline.</p>
+<h3 id="concept-drift-when-the-relationship-itself-changes"><a href="../level-4/03-concept-drift/">Concept Drift: When the Relationship Itself Changes</a><a class="headerlink" href="#concept-drift-when-the-relationship-itself-changes" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> What is concept drift?</p>
+<p><strong>Answer:</strong> The relationship between inputs and target changes over time</p>
+<p>Fraud patterns change.</p>
+<p><strong>Q130.</strong> How detect it?</p>
+<p><strong>Answer:</strong> Monitor performance on labeled data as labels arrive</p>
+<p>Needs ground truth.</p>
+<p><strong>Q131.</strong> What's the difference from data drift?</p>
+<p><strong>Answer:</strong> Concept drift changes P(y|x); data drift changes P(x)</p>
+<p>Different causes.</p>
+<p><strong>Q132.</strong> What responds to concept drift?</p>
+<p><strong>Answer:</strong> Retraining on recent data or model redesign</p>
+<p>Adapt.</p>
+<h3 id="model-performance-monitoring-without-ground-truth"><a href="../level-4/04-monitoring-without-ground-truth/">Model Performance Monitoring Without Ground Truth</a><a class="headerlink" href="#model-performance-monitoring-without-ground-truth" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> How monitor when labels arrive late or never?</p>
+<p><strong>Answer:</strong> Proxy signals: input drift, prediction distribution and business metrics</p>
+<p>Indirect.</p>
+<p><strong>Q134.</strong> What does a shifting prediction distribution suggest?</p>
+<p><strong>Answer:</strong> Inputs or behavior changed, warranting investigation</p>
+<p>Early warning.</p>
+<p><strong>Q135.</strong> What's delayed labeling?</p>
+<p><strong>Answer:</strong> Outcomes known days or weeks after predictions</p>
+<p>Backfill metrics.</p>
+<p><strong>Q136.</strong> What can approximate ground truth?</p>
+<p><strong>Answer:</strong> Human review samples or downstream outcomes</p>
+<p>Sampling.</p>
+<h3 id="alerting-on-model-degradation"><a href="../level-4/05-alerting-on-degradation/">Alerting on Model Degradation</a><a class="headerlink" href="#alerting-on-model-degradation" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> What makes a good ML alert?</p>
+<p><strong>Answer:</strong> Actionable, tied to impact, with thresholds and runbooks</p>
+<p>Avoid fatigue.</p>
+<p><strong>Q138.</strong> What's alert fatigue?</p>
+<p><strong>Answer:</strong> So many alerts that real problems are ignored</p>
+<p>Tune.</p>
+<p><strong>Q139.</strong> What severity should drift alone have?</p>
+<p><strong>Answer:</strong> Lower than a confirmed performance drop</p>
+<p>Investigate first.</p>
+<p><strong>Q140.</strong> What should an alert link to?</p>
+<p><strong>Answer:</strong> Dashboards, recent changes and the model version</p>
+<p>Debugging.</p>
+<h3 id="retraining-triggers-when-and-how-to-retrain"><a href="../level-4/06-retraining-triggers/">Retraining Triggers: When and How to Retrain</a><a class="headerlink" href="#retraining-triggers-when-and-how-to-retrain" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> What triggers retraining?</p>
+<p><strong>Answer:</strong> Schedule, drift/performance thresholds or enough new labeled data</p>
+<p>Policy.</p>
+<p><strong>Q142.</strong> What must happen before a retrained model ships?</p>
+<p><strong>Answer:</strong> Validation against the current model and the same gates</p>
+<p>No blind updates.</p>
+<p><strong>Q143.</strong> What's a risk of automatic retraining?</p>
+<p><strong>Answer:</strong> Learning from bad or poisoned data and degrading silently</p>
+<p>Guardrails.</p>
+<p><strong>Q144.</strong> What record keeps retraining auditable?</p>
+<p><strong>Answer:</strong> Data version, parameters and approval history</p>
+<p>Lineage.</p>
+<h3 id="model-governance-auditability"><a href="../level-4/07-model-governance-auditability/">Model Governance &amp; Auditability</a><a class="headerlink" href="#model-governance-auditability" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What does model governance cover?</p>
+<p><strong>Answer:</strong> Ownership, documentation, approvals, risk and audit trails</p>
+<p>Accountability.</p>
+<p><strong>Q146.</strong> What's a model card?</p>
+<p><strong>Answer:</strong> Documentation of purpose, data, performance, limits and risks</p>
+<p>Transparency.</p>
+<p><strong>Q147.</strong> Why keep audit logs of predictions?</p>
+<p><strong>Answer:</strong> To explain and investigate decisions affecting people</p>
+<p>Compliance.</p>
+<p><strong>Q148.</strong> What regulations may apply?</p>
+<p><strong>Answer:</strong> GDPR/automated decision rules and sector regulations</p>
+<p>Depends on use.</p>
+<h3 id="cost-latency-tradeoffs-in-model-serving"><a href="../level-4/08-cost-latency-tradeoffs/">Cost &amp; Latency Tradeoffs in Model Serving</a><a class="headerlink" href="#cost-latency-tradeoffs-in-model-serving" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> How trade latency against accuracy?</p>
+<p><strong>Answer:</strong> Pick the smallest model meeting the latency and quality targets</p>
+<p>Budgets.</p>
+<p><strong>Q150.</strong> What reduces serving cost?</p>
+<p><strong>Answer:</strong> Batching, quantization/distillation, caching and autoscaling</p>
+<p>Efficiency.</p>
+<p><strong>Q151.</strong> What's a cascade?</p>
+<p><strong>Answer:</strong> Cheap model first, expensive model only for hard cases</p>
+<p>Cost saving.</p>
+<p><strong>Q152.</strong> What should you measure?</p>
+<p><strong>Answer:</strong> Cost per prediction and p95 latency with quality</p>
+<p>Trade-off curve.</p>
+<h3 id="common-mlops-anti-patterns"><a href="../level-4/09-mlops-antipatterns/">Common MLOps Anti-Patterns</a><a class="headerlink" href="#common-mlops-anti-patterns" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> Which is an MLOps antipattern?</p>
+<p><strong>Answer:</strong> Manual deploys from a notebook with no versioning</p>
+<p>Fix with pipelines.</p>
+<p><strong>Q154.</strong> Another antipattern?</p>
+<p><strong>Answer:</strong> Training and serving using different feature code</p>
+<p>Skew.</p>
+<p><strong>Q155.</strong> Another?</p>
+<p><strong>Answer:</strong> No monitoring after launch</p>
+<p>Models decay.</p>
+<p><strong>Q156.</strong> Another?</p>
+<p><strong>Answer:</strong> Tuning on the test set</p>
+<p>Optimistic metrics.</p>
+<h3 id="capstone-a-complete-mlops-loop-for-a-real-model"><a href="../level-4/10-capstone-complete-mlops-loop/">Capstone: A Complete MLOps Loop for a Real Model</a><a class="headerlink" href="#capstone-a-complete-mlops-loop-for-a-real-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What does the complete MLOps loop include?</p>
+<p><strong>Answer:</strong> Tracking, registry, CI/CD, serving, monitoring and retraining</p>
+<p>Closed loop.</p>
+<p><strong>Q158.</strong> How prove the loop works?</p>
+<p><strong>Answer:</strong> Inject drift and watch detection, alert, retrain and safe promotion</p>
+<p>End-to-end test.</p>
+<p><strong>Q159.</strong> What documentation helps?</p>
+<p><strong>Answer:</strong> Runbooks, model cards and architecture decisions</p>
+<p>Operate.</p>
+<p><strong>Q160.</strong> What sustains it?</p>
+<p><strong>Answer:</strong> Ownership, monitoring and continuous improvement</p>
+<p>Lifecycle.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> A model has 92% test accuracy but nobody can tell which data or code produced it. What is missing?</p>
+<p><strong>Answer:</strong> Experiment tracking and lineage (params, metrics, artifacts, code and data versions)</p>
+<p>Reproducibility.</p>
+<p><strong>Q162.</strong> With the same seed, do two random draws match?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="n">a</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span><span class="n">b</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> True</p>
+<p>Seeds make randomness repeatable, but library versions and hardware also matter. Verified by running it.</p>
+<p><strong>Q163.</strong> You tuned hyperparameters repeatedly against the test set. What's wrong?</p>
+<p><strong>Answer:</strong> The test set is now overfit; keep a separate final holdout</p>
+<p>Selection bias.</p>
+<p><strong>Q164.</strong> A production service should load 'the best model'. How should it reference it?</p>
+<p><strong>Answer:</strong> By a registry alias (e.g. production), not a hard-coded version or file path</p>
+<p>Promotion and rollback by moving the alias.</p>
+<p><strong>Q165.</strong> What should a promotion gate check?</p>
+<p><strong>Answer:</strong> Metric thresholds, regression vs the current model, latency and schema compatibility</p>
+<p>Policy as code.</p>
+<p><strong>Q166.</strong> Predictions are 'wrong' after a deploy though code is fine. A classic cause?</p>
+<p><strong>Answer:</strong> Training-serving skew: features computed differently online</p>
+<p>Share transformations or use a feature store.</p>
+<p><strong>Q167.</strong> A request has an unexpected column type and the service returns a prediction anyway. What was missing?</p>
+<p><strong>Answer:</strong> Input schema validation at serving time</p>
+<p>Fail clearly instead of silently coercing.</p>
+<p><strong>Q168.</strong> A new model must be evaluated on live traffic without affecting users. Which strategy?</p>
+<p><strong>Answer:</strong> Shadow deployment (compare outputs, don't use them)</p>
+<p>Safe comparison.</p>
+<p><strong>Q169.</strong> A small percentage of users get the new model and metrics are checked before widening. What is it?</p>
+<p><strong>Answer:</strong> A canary release</p>
+<p>Gradual exposure.</p>
+<p><strong>Q170.</strong> Why randomize A/B tests by user rather than by request?</p>
+<p><strong>Answer:</strong> A user should have a consistent experience and independent samples</p>
+<p>Sticky assignment.</p>
+<p><strong>Q171.</strong> CI for ML should include which checks beyond unit tests?</p>
+<p><strong>Answer:</strong> Data validation, a small training smoke test and model metric gates</p>
+<p>Ml-specific CI.</p>
+<p><strong>Q172.</strong> The pipeline retrains every night and one night the model degrades silently. What guards against shipping it?</p>
+<p><strong>Answer:</strong> Evaluation gates against the current production model before promotion</p>
+<p>No blind updates.</p>
+<p><strong>Q173.</strong> Input feature distributions shift but labels aren't available yet. Which signal helps?</p>
+<p><strong>Answer:</strong> Data drift metrics (PSI/KS) and prediction distribution monitoring</p>
+<p>Proxy signals.</p>
+<p><strong>Q174.</strong> A PSI of 0.3 is typically interpreted as?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">p</span><span class="o">=</span><span class="mf">0.3</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="s1">'stable'</span> <span class="k">if</span> <span class="n">p</span><span class="o">&lt;</span><span class="mf">0.1</span> <span class="k">else</span> <span class="s1">'moderate drift'</span> <span class="k">if</span> <span class="n">p</span><span class="o">&lt;</span><span class="mf">0.25</span> <span class="k">else</span> <span class="s1">'significant drift'</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> significant drift</p>
+<p>Common rule of thumb: &lt;0.1 stable, 0.1-0.25 moderate, &gt;0.25 significant. Verified by running it.</p>
+<p><strong>Q175.</strong> Fraud patterns change so inputs look similar but outcomes differ. What is it?</p>
+<p><strong>Answer:</strong> Concept drift (the input-output relationship changed)</p>
+<p>Needs labeled outcomes to detect.</p>
+<p><strong>Q176.</strong> What makes an ML alert useful?</p>
+<p><strong>Answer:</strong> It's actionable, tied to impact and links to the model version and runbook</p>
+<p>Avoid alert fatigue.</p>
+<p><strong>Q177.</strong> When is automatic retraining risky?</p>
+<p><strong>Answer:</strong> When bad or poisoned data can flow in and degrade the model silently</p>
+<p>Add validation and gates.</p>
+<p><strong>Q178.</strong> Which artifact documents a model's purpose, data, limits and risks?</p>
+<p><strong>Answer:</strong> A model card</p>
+<p>Governance.</p>
+<p><strong>Q179.</strong> A cheaper model handles most requests and an expensive one the hard cases. What is this?</p>
+<p><strong>Answer:</strong> A cascade (cost/latency trade-off)</p>
+<p>Serving cost control.</p>
+<p><strong>Q180.</strong> Which is an MLOps anti-pattern?</p>
+<p><strong>Answer:</strong> Deploying manually from a notebook with no versioning or monitoring</p>
+<p>Fix with pipelines and registry.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="detect-data-drift-with-psi-and-ks">Detect data drift with PSI and KS<a class="headerlink" href="#detect-data-drift-with-psi-and-ks" title="Permanent link">&para;</a></h3>
+<p>Implement psi (binned population stability index using the reference range, clamping out-of-range live values), level (stable / moderate / significant) and a two-sample KS statistic. Compare a live sample from the same distribution with one whose mean has shifted.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>import math
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>def psi(expected, actual, bins=5):
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    # bin both samples with edges from the reference range (clamp out-of-range values into the end bins),
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    # turn counts into shares (floor at 1e-4) and return sum((a - e) * ln(a / e))
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    return 0.0
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>def level(p):
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    # &lt; 0.1 "stable", &lt; 0.25 "moderate drift", otherwise "significant drift"
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    return ""
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>def ks(a, b):
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    # two-sample Kolmogorov-Smirnov: the largest gap between the two empirical CDFs
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    return 0.0
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>ref = [i / 10 for i in range(100)]                       # training feature: roughly uniform 0..9.9
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>same = [i / 10 + 0.05 for i in range(100)]               # same distribution
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>shifted = [i / 10 + 3 for i in range(100)]               # mean shifted by +3
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>for name, live in [("same", same), ("shifted", shifted)]:
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    p = psi(ref, live)
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>    print(f"{name:8s} psi={p:.3f} -&gt; {level(p)}  ks={ks(ref, live):.2f}")
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>same     psi=0.001 -&gt; stable  ks=0.01
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>shifted  psi=1.864 -&gt; significant drift  ks=0.30
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+import math
+
+def psi(expected, actual, bins=5):
+    """Population Stability Index between a reference sample and a live sample."""
+    lo, hi = min(expected), max(expected)
+    edges = [lo + (hi - lo) * i / bins for i in range(bins + 1)]
+    def share(xs):
+        counts = [0] * bins
+        for x in xs:
+            i = min(max(int((x - lo) / (hi - lo) * bins), 0), bins - 1)
+            counts[i] += 1
+        return [max(c / len(xs), 1e-4) for c in counts]
+    e, a = share(expected), share(actual)
+    return sum((ai - ei) * math.log(ai / ei) for ei, ai in zip(e, a))
+
+def level(p):
+    return "stable" if p &lt; 0.1 else "moderate drift" if p &lt; 0.25 else "significant drift"
+
+def ks(a, b):
+    """Two-sample Kolmogorov-Smirnov statistic (max CDF gap)."""
+    pts = sorted(set(a + b))
+    return max(abs(sum(x &lt;= p for x in a) / len(a) - sum(x &lt;= p for x in b) / len(b)) for p in pts)
+
+ref = [i / 10 for i in range(100)]                       # training feature: roughly uniform 0..9.9
+same = [i / 10 + 0.05 for i in range(100)]               # same distribution
+shifted = [i / 10 + 3 for i in range(100)]               # mean shifted by +3
+for name, live in [("same", same), ("shifted", shifted)]:
+    p = psi(ref, live)
+    print(f"{name:8s} psi={p:.3f} -&gt; {level(p)}  ks={ks(ref, live):.2f}")
+```
+
+The same-distribution sample scores near zero on both metrics, while the shifted sample produces a large PSI and a high KS statistic, signalling drift without needing labels. Thresholds are rules of thumb. Verified by running the solution.
+</code></pre></div>
+<h3 id="a-registry-with-promotion-gates-and-rollback">A registry with promotion gates and rollback<a class="headerlink" href="#a-registry-with-promotion-gates-and-rollback" title="Permanent link">&para;</a></h3>
+<p>Implement Registry.promote: reject versions below the minimum AUC, above the latency limit or regressing against the current production version, otherwise move the production alias; rollback then restores the previous version from the history.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>class Registry:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    def __init__(self):
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>        self.versions = {}          # version -&gt; {"metrics": {...}, "run": ...}
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        self.alias = {}             # alias -&gt; version
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>        self.history = []
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    def register(self, metrics, run):
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        v = len(self.versions) + 1
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>        self.versions[v] = {"metrics": metrics, "run": run}
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>        return v
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    def promote(self, version, gates):
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>        # gates: min_auc, max_p95_ms, max_regression. Collect failure messages ("auc X &lt; Y", "p95 Nms &gt; Mms",
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        # "auc regression vs vK: X &lt; base") and append "REJECT vN: &lt;failures joined by '; '&gt;" to history,
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>        # returning False; if all pass set alias["production"] = version, append
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>        # "PROMOTE vN (previous: &lt;old or None&gt;)" and return True. The regression gate only applies when a
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>        # production version exists and the new auc is below its auc minus max_regression.
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>        return False
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>    def rollback(self):
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>        for line in reversed(self.history):
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>            if line.startswith("PROMOTE") and "previous: None" not in line:
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>                prev = int(line.split("previous: ")[1].rstrip(")"))
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>                self.alias["production"] = prev
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a>                self.history.append(f"ROLLBACK to v{prev}")
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a>                return prev
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a>        raise RuntimeError("nothing to roll back to")
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a>gates = {"min_auc": 0.80, "max_p95_ms": 100, "max_regression": 0.01}
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>r = Registry()
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a>v1 = r.register({"auc": 0.84, "p95_ms": 60}, "run-a")
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a>v2 = r.register({"auc": 0.79, "p95_ms": 55}, "run-b")
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>v3 = r.register({"auc": 0.86, "p95_ms": 140}, "run-c")
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a>v4 = r.register({"auc": 0.87, "p95_ms": 70}, "run-d")
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a>for v in (v1, v2, v3, v4):
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a>    print(v, r.promote(v, gates))
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a>print("production -&gt;", r.alias["production"])
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>print("rollback -&gt;", r.rollback(), "production -&gt;", r.alias["production"])
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>print(*r.history, sep="\n")
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>1 True
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>2 False
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>3 False
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>4 True
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>production -&gt; 4
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>rollback -&gt; 1 production -&gt; 1
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>PROMOTE v1 (previous: None)
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>REJECT v2: auc 0.79 &lt; 0.8; auc regression vs v1: 0.79 &lt; 0.84
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>REJECT v3: p95 140ms &gt; 100ms
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>PROMOTE v4 (previous: 1)
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>ROLLBACK to v1
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+class Registry:
+    def __init__(self):
+        self.versions = {}          # version -&gt; {"metrics": {...}, "run": ...}
+        self.alias = {}             # alias -&gt; version
+        self.history = []
+
+    def register(self, metrics, run):
+        v = len(self.versions) + 1
+        self.versions[v] = {"metrics": metrics, "run": run}
+        return v
+
+    def promote(self, version, gates):
+        """Move the 'production' alias to `version` only if every gate passes; otherwise explain why not."""
+        m = self.versions[version]["metrics"]
+        failures = []
+        if m["auc"] &lt; gates["min_auc"]:
+            failures.append(f"auc {m['auc']} &lt; {gates['min_auc']}")
+        if m["p95_ms"] &gt; gates["max_p95_ms"]:
+            failures.append(f"p95 {m['p95_ms']}ms &gt; {gates['max_p95_ms']}ms")
+        current = self.alias.get("production")
+        if current is not None:
+            base = self.versions[current]["metrics"]["auc"]
+            if m["auc"] &lt; base - gates["max_regression"]:
+                failures.append(f"auc regression vs v{current}: {m['auc']} &lt; {base}")
+        if failures:
+            self.history.append(f"REJECT v{version}: " + "; ".join(failures))
+            return False
+        self.alias["production"] = version
+        self.history.append(f"PROMOTE v{version} (previous: {current})")
+        return True
+
+    def rollback(self):
+        for line in reversed(self.history):
+            if line.startswith("PROMOTE") and "previous: None" not in line:
+                prev = int(line.split("previous: ")[1].rstrip(")"))
+                self.alias["production"] = prev
+                self.history.append(f"ROLLBACK to v{prev}")
+                return prev
+        raise RuntimeError("nothing to roll back to")
+
+gates = {"min_auc": 0.80, "max_p95_ms": 100, "max_regression": 0.01}
+r = Registry()
+v1 = r.register({"auc": 0.84, "p95_ms": 60}, "run-a")
+v2 = r.register({"auc": 0.79, "p95_ms": 55}, "run-b")
+v3 = r.register({"auc": 0.86, "p95_ms": 140}, "run-c")
+v4 = r.register({"auc": 0.87, "p95_ms": 70}, "run-d")
+for v in (v1, v2, v3, v4):
+    print(v, r.promote(v, gates))
+print("production -&gt;", r.alias["production"])
+print("rollback -&gt;", r.rollback(), "production -&gt;", r.alias["production"])
+print(*r.history, sep="\n")
+```
+
+Gating promotion on quality, latency and regression protects production from worse models, and alias-based deployment makes rollback a pointer move. This is a teaching model of a registry. Verified by running the solution.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">MLOps Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/ai-ml-mastery-path/">AI/ML</a></li><li><a href="https://learnmasterypath.com/llm-dev-mastery-path/">LLM Dev</a></li><li><a href="https://learnmasterypath.com/rag-mastery-path/">RAG</a></li><li><a href="https://learnmasterypath.com/edge-ai-mastery-path/">Edge AI</a></li><li><a href="https://learnmasterypath.com/claude-training-mastery-path/">Claude Training</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../level-1/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/mlops-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/mlops-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
