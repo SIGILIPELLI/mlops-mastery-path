@@ -1,6 +1,6 @@
 ---
 title: "Free MLOps Course: Experiment Tracking, Model Registry, Pipelines & Drift Monitoring"
-description: "Free MLOps course: 40 lessons on experiment tracking, model registries, training pipelines, deployment, and drift monitoring."
+description: "Free MLOps course: 36 lessons and 4 projects on experiment tracking, model registries, training pipelines, deployment, and drift monitoring."
 ---
 
 # MLOps Mastery Path
@@ -31,7 +31,7 @@ course deliberately doesn't repeat that material.
 | **3 · Pipelines & Deployment** | Training pipelines, CI/CD for ML, containerizing, canary/shadow deployment, feature stores | 10 | Ship a model through a real, automated, tested pipeline |
 | **4 · Monitoring, Drift & Operating ML at Scale** | Data/concept drift, monitoring without ground truth, retraining triggers, governance | 10 | Detect real model degradation and decide when to retrain |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), for **40 lessons** total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
 
 ## How to use this site
 
